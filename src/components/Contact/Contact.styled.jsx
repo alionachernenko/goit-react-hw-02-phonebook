@@ -5,6 +5,7 @@ export const Info = styled.li `
 display: flex;
 // gap: 10px;
 justify-content: space-between;
+align-items: center
 `
 
 export const Data = styled.span `
