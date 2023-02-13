@@ -6,6 +6,9 @@ import { List } from './ContactList.styled';
 
 
 export class ContactList extends Component {
+
+    
+  
     static propTypes = {
         contactsList: PropTypes.arrayOf(PropTypes.exact({
             id: PropTypes.string.isRequired,
@@ -17,7 +20,6 @@ export class ContactList extends Component {
 
     render () {
         const {contactsList, removeContact} = this.props
-
         return (
             <List>
                 {contactsList.map(({id, name, phone})=> (
